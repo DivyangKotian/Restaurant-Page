@@ -50,14 +50,24 @@ body{
     font-weight: 900;
     text-transform: uppercase;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
+
+.resto-name:hover{
+    transform: scale(1.08);
+}
+
 
 .content {
     margin-top: 60px;
-    padding: 30px;
+    padding: 40px;
     overflow-y: auto; /* Enables vertical scrolling */
-    max-height: calc(100vh - 2.5rem - 60px ); /* Adjust to include margin-top height if needed */
-    box-sizing: border-box; /* Ensures padding doesn’t add to height */
+    max-height: calc(100vh - 2.5rem - 60px );
+    scrollbar-width: none; /*firefox hiding scrollbar*/
+}
+
+.content::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
 }
 
 /* footer styling*/

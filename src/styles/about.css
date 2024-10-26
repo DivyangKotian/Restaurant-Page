@@ -1,0 +1,14 @@
+.about-container{
+    --font-primary: #eee;
+    --background-text: rgba(45, 24, 16, 0.4);
+    color: var(--font-primary);
+    padding:50px 200px;
+    margin-top: 20px;
+    background-color: var(--background-text);
+    width: 100%;
+}
+
+.about-container >p {
+    font-size: 2rem;
+    margin-top: 20px;
+}

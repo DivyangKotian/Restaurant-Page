@@ -18,10 +18,10 @@
     --primary-black: #000;
     --primary-white: #fff;
     --lite-grey: rgba(0, 0, 0, 0.2);
-    --lite-big-stone: rgba(21, 37, 54, 0.7);
+    --lite-big-stone: rgba(21, 37, 54, 0.8);
   
-    --card-width: 360px;
-    --card-height: 360px;
+    --card-width: 330px;
+    --card-height: 330px;
    
   
     --border-radius: 3px;
@@ -39,7 +39,7 @@ article.card {
 
 article.card .thumb {
     width: auto;
-    height: 280px; 
+    height: 260px; 
     background-size: cover;
     border-radius: var(--border-radius);
 }
@@ -90,7 +90,7 @@ article.card .infos .details {
 }
 
 article.card:hover .infos {
-    transform: translateY(-260px);
+    transform: translateY(-230px);
 }
 
   

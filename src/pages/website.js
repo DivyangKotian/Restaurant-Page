@@ -2,8 +2,8 @@
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 import loadHome from "./home";
-
 import loadMenu from './menu';
+import loadAbout from './about';
 
 function createHeader(){
     const headerContainer= document.createElement('div');
@@ -11,6 +11,12 @@ function createHeader(){
     const restoName= document.createElement('h1');
     restoName.classList.add("resto-name");
     restoName.textContent="Cum Lovers";
+    restoName.addEventListener('click', () =>{
+        const home=document.getElementById('Home');
+        if(home.classList.contains("active")) return;
+        toggleActiveNav(home);
+        loadHome();
+    })
 
     headerContainer.appendChild(restoName);
     
@@ -108,6 +114,8 @@ function createFooter(){
     contentContainer.appendChild(createHeader());
     contentContainer.appendChild(createContent());
     contentContainer.appendChild(createFooter());
+
+    loadHome();
 }
 
 export{ initializeWebsite, toggleActiveNav}

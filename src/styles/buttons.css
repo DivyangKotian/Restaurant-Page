@@ -75,3 +75,7 @@
 .button-container li:hover::after {
   transition-delay: 0s, 0.3s, 0s;
 }
+
+.button-container .active{
+  border: 2px solid #fff;
+}
