@@ -1,0 +1,89 @@
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    font-size: 16px;
+    font-family: "Saira Semi Condensed", sans-serif;
+    --font-primary: #eee;
+    --font-dark: #aaa;
+    --background-dark: rgba(0, 0, 0, 0.9);
+    --background-light: rgba(0, 0, 0, 0.562);
+    --background-light-hover: rgba(136, 127, 127, 0.411);
+}
+
+body{
+    background: url('./images/background.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/*header styling */
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(45, 24, 16, 0.73);
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.resto-name{
+    margin-left: 50px;
+    font-size: 3.5rem;
+    color: var(--font-primary);
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 10px;
+    margin-right: 100px;
+}
+
+
+
+/* footer styling*/
+.footer {
+    background-image: radial-gradient(100% 100% at 100% 0, #00B0FF 0, var(--footer) 100%);
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    font-size: 17px;
+    padding: 5px;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #00B0FF, 0 0 30px #00B0FF; /* Neon glow for text */
+    text-align: center;
+    color: #ffffff;
+    height: 40px; /* Ensure enough height for footer content */
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    z-index: 1000; /* Ensures the footer stays on top of other content */
+}
+
+/* Footer icon styling */
+.fa-github {
+    color: #00B0FF;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ff007f, 0 0 30px #ff007f; /* Neon pink glow for GitHub icon */
+}
+
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.6);
+    color: #ff007f; /* Neon pink color on hover */
+    text-shadow: 0 0 15px #ff007f, 0 0 30px #ff007f; /* Stronger neon glow on hover */
+}
