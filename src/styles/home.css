@@ -1,0 +1,20 @@
+.title-container{
+    --font-primary: #eee;
+    --background-text: rgba(45, 24, 16, 0.43);
+    font-family: "Style Script", cursive;
+    color: var(--font-primary);
+    padding: 20px;
+    background-color: var(--background-text);
+    width: 80%;
+}
+
+.sub-title{
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.filler-text{
+    font-family: "Tangerine", cursive;
+    font-size: 2rem;
+    font-weight: 700;
+}

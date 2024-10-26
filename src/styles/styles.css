@@ -13,7 +13,7 @@
     font-family: "Saira Semi Condensed", sans-serif;
     --font-primary: #eee;
     --font-dark: #aaa;
-    --background-dark: rgba(0, 0, 0, 0.9);
+    --background-dark: rgba(0, 0, 0, 0.90);
     --background-light: rgba(0, 0, 0, 0.562);
     --background-light-hover: rgba(136, 127, 127, 0.411);
 }
@@ -31,7 +31,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(45, 24, 16, 0.73);
+    background-color: var(--background-dark);
+    /* background-color: rgba(45, 24, 16, 0.73); */
     width: 100%;
     text-align: center;
     margin-top: 10px;
