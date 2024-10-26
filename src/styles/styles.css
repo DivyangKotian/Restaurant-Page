@@ -24,15 +24,20 @@ body{
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*header styling */
 .header-container{
+    position: fixed; 
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--background-dark);
-    /* background-color: rgba(45, 24, 16, 0.73); */
     width: 100%;
     text-align: center;
     margin-top: 10px;
@@ -44,11 +49,20 @@ body{
     color: var(--font-primary);
     font-weight: 900;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+.content {
+    margin-top: 60px;
+    padding: 30px;
+    overflow-y: auto; /* Enables vertical scrolling */
+    max-height: calc(100vh - 2.5rem - 60px ); /* Adjust to include margin-top height if needed */
+    box-sizing: border-box; /* Ensures padding doesn’t add to height */
 }
 
 /* footer styling*/
 .footer {
-    background-image: radial-gradient(100% 100% at 100% 0, #00B0FF 0, var(--footer) 100%);
+    background-image: radial-gradient(100% 100% at 100% 0, #FE6A00 0, var(--footer) 100%);
     grid-area: footer;
     display: flex;
     align-items: center;
@@ -57,7 +71,7 @@ body{
     width: 100%;
     font-size: 17px;
     padding: 5px;
-    text-shadow: 0 0 10px #ffffff, 0 0 20px #00B0FF, 0 0 30px #00B0FF; /* Neon glow for text */
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #FE6A00, 0 0 30px #FE6A00; /* Neon glow for text */
     text-align: center;
     color: #ffffff;
     height: 40px; /* Ensure enough height for footer content */
@@ -70,13 +84,13 @@ body{
 
 /* Footer icon styling */
 .fa-github {
-    color: #00B0FF;
+    color: #fff;
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-    text-shadow: 0 0 10px #ffffff, 0 0 20px #ff007f, 0 0 30px #ff007f; /* Neon pink glow for GitHub icon */
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #FE6A00, 0 0 30px #FE6A00; /* Neon pink glow for GitHub icon */
 }
 
 .fa-github:hover {
     transform: rotate(360deg) scale(1.6);
-    color: #ff007f; /* Neon pink color on hover */
-    text-shadow: 0 0 15px #ff007f, 0 0 30px #ff007f; /* Stronger neon glow on hover */
+    color: #FE6A00; /* Neon pink color on hover */
+    text-shadow: 0 0 15px #FE6A00, 0 0 30px #FE6A00; /* Stronger neon glow on hover */
 }

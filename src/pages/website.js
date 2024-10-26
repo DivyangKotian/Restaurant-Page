@@ -3,6 +3,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 import loadHome from "./home";
 
+import loadMenu from './menu';
+
 function createHeader(){
     const headerContainer= document.createElement('div');
     headerContainer.classList.add("header-container");
@@ -18,6 +20,7 @@ function createHeader(){
 
 function createBtn(name){                                       
     const btn= document.createElement('li');
+    btn.setAttribute('id',name);
     btn.setAttribute('data-val', name)
     btn.classList.add("button-nav");
     btn.textContent=name;
@@ -99,10 +102,12 @@ function createFooter(){
     return footer;
 }
 
-export default function initializeWebsite(){
+ function initializeWebsite(){
     const contentContainer= document.getElementById('content-container');
 
     contentContainer.appendChild(createHeader());
     contentContainer.appendChild(createContent());
     contentContainer.appendChild(createFooter());
 }
+
+export{ initializeWebsite, toggleActiveNav}

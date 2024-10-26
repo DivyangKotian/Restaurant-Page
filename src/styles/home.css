@@ -1,20 +1,133 @@
 .title-container{
     --font-primary: #eee;
-    --background-text: rgba(45, 24, 16, 0.43);
-    font-family: "Style Script", cursive;
+    --background-text: rgba(45, 24, 16, 0.4);
+    font-family: "Tangerine", cursive;
     color: var(--font-primary);
-    padding: 20px;
+    padding:50px;
+    margin-top: 20px;
     background-color: var(--background-text);
-    width: 80%;
+    width: 100%;
 }
 
 .sub-title{
-    font-weight: 700;
     font-size: 4rem;
-}
+    }
+
+.tangerine-bold {
+    font-family: "Tangerine", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
 
 .filler-text{
-    font-family: "Tangerine", cursive;
     font-size: 2rem;
-    font-weight: 700;
+    margin-top: 20px;
 }
+
+
+/*discover menu btn styling */
+:root {
+    --bg: #0aa1dd;
+    --orange: #FE6A00;
+    --primary-white: #fff;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  .container-menu-btn{
+    margin-top: 15px;
+    font-family: "Saira Semi Condensed", sans-serif;
+    font-size: 16px;
+  }
+  
+  button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+  }
+  
+  button.discover-menu {
+    width: 12rem;
+    height: auto;
+  }
+  
+  button.discover-menu .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: var(--primary-white);
+    border-radius: 1.625rem;
+  }
+  
+  button.discover-menu .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: var(--orange);
+  }
+  
+  button.discover-menu .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.15rem;
+    background: none;
+  }
+  
+  button.discover-menu .circle .icon.arrow::before {
+    position: absolute;
+    content: '';
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.18rem solid var(--orange);
+    border-right: 0.18rem solid var(--orange);
+    transform: rotate(45deg);
+  }
+  
+  button.discover-menu .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: var(--primary-white);
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  button.discover-menu:hover .circle {
+    width: 100%;
+  }
+  
+  button.discover-menu:hover .circle .icon.arrow {
+    background: var(--orange);
+    transform: translate(1rem, 0);
+  }
+  
+  button.discover-menu:hover .button-text {
+    color: var(--orange);
+  }
