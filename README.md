@@ -1,5 +1,7 @@
 # Restraunt-Page
 
+- [Live Demo](https://divyangkotian.github.io/Restaurant-Page/)
+
 ## Description
 This project is a web application created to showcase a restaurant menu with features such as an about page, menu items, and a home page. It uses Webpack for module bundling and asset management, providing a modern development experience with optimized performance.
 
