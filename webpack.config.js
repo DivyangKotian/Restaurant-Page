@@ -2,7 +2,7 @@
 
 const path=require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports={
     mode: "development",
@@ -25,6 +25,11 @@ module.exports={
         new HtmlWebpackPlugin({
           template: "./src/template.html",
         }),
+        new CopyWebpackPlugin({
+          patterns: [
+              { from: path.resolve(__dirname, 'src/styles/images'), to: 'styles/images' }
+          ],
+      }),
       ],
      module: {
     rules: [
