@@ -13,12 +13,12 @@ This project is a web application created to showcase a restaurant menu with fea
 - Figma for design
 
 ## Features
-- **Responsive Design:** The application is designed to work seamlessly on various screen sizes, atleast to the best of my current abilities.
 - **Dynamic Content:** Pages are dynamically loaded using JavaScript, enhancing user experience.
 - **Stylish Animations:** CSS animations add an engaging visual aspect to buttons and hover effects.
 - **Modular Architecture:** Code is organized into modules for better maintainability and scalability.
 
 ## Future Improvements
+- **Responsive design** Implement seamless useage across all devices.
 - **Enhanced Accessibility:** Implement more accessibility features to ensure usability for all users.
 - **Improved SEO:** Optimize the application for search engines to increase visibility.
 - **Adding a working cart** Implement a "Cart" functionality to improve user experience and increase project scope.
