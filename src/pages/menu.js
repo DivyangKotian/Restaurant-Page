@@ -6,7 +6,7 @@ function createMenuItem(name, price, description){
     const menuImg= document.createElement('img');
     menuImg.setAttribute('class','thumb');
     const imgSrc=name.replace(/\s+/g, '').toLowerCase();
-    menuImg.src=`/styles/images/${imgSrc}.jpg`;
+    menuImg.src = `./styles/images/${imgSrc}.jpg`;
     menuImg.alt=name;
 
     const descriptionContainer=document.createElement('div');
