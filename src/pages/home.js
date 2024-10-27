@@ -29,7 +29,7 @@ function createButton(name){
     btnMenu.appendChild(btnText);
     containerMenuBtn.appendChild(btnMenu);
 
-    containerMenuBtn.addEventListener('click',()=>{
+    btnMenu.addEventListener('click',()=>{
         const menu=document.getElementById('Menu');
         if(menu.classList.contains("active")) return;
         toggleActiveNav(menu);
