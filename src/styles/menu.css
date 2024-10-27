@@ -9,7 +9,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    /* Remove height: 100% to let content determine its height */
+}
+
+/* Media query for smaller devices */
+@media (max-width: 768px) { 
+    .menu-container {
+        grid-template-columns: 1fr; /* Change to 1 item per column */
+    }
 }
 
 /* Card Styling */
